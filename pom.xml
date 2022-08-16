@@ -27,7 +27,30 @@
     <springCloudAlibaba.version>2021.1</springCloudAlibaba.version>
     <springCloud.version>2020.0.1</springCloud.version>
     <dm.version>0.0.1</dm.version>
+    <nacos.discovery>0.2.2.RELEASE</nacos.discovery>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bootstrap</artifactId>
+      <version>3.1.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+      <version>${springCloudAlibaba.version}</version>
+    </dependency>
+
+    <!--服务注册-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+      <version>${nacos.discovery}</version>
+    </dependency>
+
+  </dependencies>
 
 
   <build>
